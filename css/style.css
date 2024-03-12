@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 40px;
+    font-size: 13px;
+}
+
+/*index.html*/
+#menu{
+    position: fixed;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    top: 0%;
+    background-color: rgb(95, 186, 4);
+    text-align: center;
+}
+
+#menu li{
+    float: left;
+    padding: 10px 0;
+    height: 20px;
+    border-right: 2px groove rgb(209, 255, 139);
+    border-left: 2px groove rgb(44, 145, 0);
+    min-width: 80px;
+}
+
+#menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    min-width: 80px;
+}
+
+#menu a:hover{
+    text-decoration: underline wavy white 2px;
+}
+
+#me{
+    height: 150px;
+    width: 150px;
+    display: block;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px auto;
+    padding: 1px
+}
+
+#me:hover{
+    border: 4px dotted green;
+    margin: 16px auto;
+}
+
+.description{
+    padding: 5px 25px;
+    margin: 10px 10px 0 15px;
+    border-left: 5px dashed yellowgreen;
+}
+
+/*portofoliu.html*/
+#proiecte{
+    margin: 20px auto;
+    width:70%;
+    text-align: center;
+}
+
+#proiecte #principal{
+    font-weight: 600;
+    color: green;
+    font-style: oblique;
+    font-size: larger;
+}
+
+#proiecte #principal td{
+    text-decoration: none;
+}
+
+#proiecte td{
+    text-decoration: underline wavy yellowgreen;
+}
+
+#proiecte th{
+    font-weight: 400;
+    text-align: left;
+}
+
+#proiecte th::first-letter{
+    padding-left: 30px;
+}
+
+caption{
+    font-size: larger;
+    padding-bottom: 10px;
+}
+
+#cvtable{
+    width:70%;
+}
+
+#cvtable .highlight{
+    background-color: rgba(43, 255, 0, 0.337);
+    border-radius: 15px;
+    font-weight: 700;
+    color: black;
+}
+
+#cvtable th{
+    background-color: rgba(213, 255, 97, 0.14);
+    border-radius: 5px;
+    font-weight: 500;
+    color: darkgreen;
+}
+
+#cvtable td{
+    background-color: rgba(121, 255, 97, 0.081);
+    border-radius: 5px;
+}
+
+#cvtable a{
+    text-decoration: underline wavy 1px green;
+    padding: 15px;
+    color: darkgreen;
+}
+
+#cvtable a:visited{
+    text-decoration-color: yellowgreen;
+}
+
+/*blog.html*/
+.main-blog{
+    width: 100%;
+    font-size: large;
+}
+
+.blog-name{
+    font-weight: bolder;
+    font-size: larger;
+    color: green;
+}
+
+.blog-name::first-letter{
+    font-size: larger;
+    color: darkgreen;
+}
+
+.main-blog .blog-text{
+    background-color: rgba(115, 255, 0, 0.337);
+    border-radius: 15px;
+}
+
+.main-blog .blog-text:hover{
+    background-color: rgba(55, 255, 0, 0.337);
+}
+
+.blog-text{
+    padding: 10px;
+}
+
+.blog-content{
+    padding-left: 15px;
+}
+
+.blog{
+    float: left;
+    width: calc(50% - 20px);
+    padding: 10px;
+}
+
+/*contacte.html*/
+
+.bubble{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    width: calc(50% - 40px);
+    background-color: rgba(121, 255, 97, 0.081);
+}
+
+.bubble .caption{
+    font-weight: 700;
+    padding-left: 25px;
+    font-size: larger;
+    color: green;
+}
+
+.bubble dt{
+    padding-left: 5px;
+    padding-top: 7px;
+}
+
+.bubble dd{
+    color: yellowgreen;
+    font-style: oblique;
+}
+
+.bubble a{
+    color: yellowgreen;
+    text-decoration: underline wavy 1px darkgreen;
+}
+
+.bubble a:visited{
+    color: darkgreen;
+    text-decoration-color: yellowgreen;
+}
+
+.bubble iframe{
+    width: 100%;
+    height: 158px;
+    border-radius: 10px;
+}
+
+/*others*/
+
+img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+footer{
+    margin-top: 15px;
+    text-align: center;
+    color: darkgreen;
+    background-color: rgba(181, 255, 97, 0.14);
+    padding: 5px 0px;
+    width: 100%;
+    float: left;
+}
+
+.animation{
+    animation: animate 1.5s linear 0s infinite alternate;
+    text-align: center;
+    font-weight: 900;
+    font-size: larger;
+}
+
+@keyframes animate {
+    0%   {color:rgb(200, 255, 71);margin-left: 0px;}
+    25%  {color:rgb(9, 255, 0);margin-left: 30px;}
+    50%  {color:rgb(0, 255, 187);margin-left: 60px;}
+    75%  {color:rgb(9, 255, 0);margin-left: 30px;}
+    100% {color:rgb(200, 255, 71);margin-left: 0px;}
+  }
+
+@media (min-width: 800px){
+    body{
+        font-size: 16px;
+        padding: 0;
+    }
+
+    #menu{
+        height: 100vh;
+        width: 180px;
+        float: left;
+    }
+
+    #menu li{
+        border-right: 0px;
+        border-left: 0px;
+        border-top: 2px groove rgb(209, 255, 139);
+        border-bottom: 2px groove rgb(44, 145, 0);
+        width: 180px;
+    }
+
+    #menu li a{
+        width: 120px;
+    }
+
+    main{
+        width: calc(100% - 180px);
+        float: right;
+    }
+
+    footer{
+        width: calc(100% - 180px);
+        float: right;
+    }
+
+    .blog{
+        float: left;
+        width: calc(25% - 20px);
+        padding: 10px;
+    }
+    
+    .bubble iframe{
+        height: 188px;
+    }
+}
