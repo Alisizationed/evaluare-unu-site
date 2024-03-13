@@ -185,11 +185,11 @@ caption{
     font-weight: 700;
     padding-left: 25px;
     font-size: larger;
-    color: yellowgreen;
+    color: green;
 }
 
 .bubble dl{
-    width: 100%;
+    word-wrap: break-word;
 }
 
 .bubble dt{
