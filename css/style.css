@@ -188,6 +188,10 @@ caption{
     color: green;
 }
 
+.bubble dl{
+    width: 100%;
+}
+
 .bubble dt{
     padding-left: 5px;
     padding-top: 7px;
